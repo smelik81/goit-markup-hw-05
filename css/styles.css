@@ -669,6 +669,10 @@ body {
     height: 120px;
     resize: none;
     padding: 8px 16px;
+    color: rgba(46, 47, 66, 0.4);
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    font-size: 12px;
 }
 .modal-input-text::placeholder {
     color: rgba(46, 47, 66, 0.4);
