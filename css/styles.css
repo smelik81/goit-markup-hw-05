@@ -185,7 +185,7 @@ body {
 
 
 .main-info {
-    /*max-width: 1440px;*/
+    max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
     background-color: #2E2F42;
@@ -601,6 +601,7 @@ body {
     width: 360px;
 }
 .modal-btn-close {
+    padding: 0;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
