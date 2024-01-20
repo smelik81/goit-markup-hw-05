@@ -1,23 +1,19 @@
 const openModalWindow = document.querySelector('.main-btn');
-const openBackdropWindow = document.querySelector('.backdrop');
+const showModalWindow = document.querySelector('.backdrop');
 const closeBackdropWindow = document.querySelector('.modal-btn-close');
 
 
-const openModalWindow = myNewFunction('click', function () {
-    if (openBackdropWindow) {
-        
-    } else {
-        
-    }
-})
-
 
 openModalWindow.addEventListener('click', function () {
-    openBackdropWindow.classList.add('.is-open')
+    if (!showModalWindow.classList.contains('.is-open')) {
+        showModalWindow.classList.add('.is-open')
+    } else {
+        showModalWindow.classList.remove('.is-open')
+    }
 });
 
 closeBackdropWindow.addEventListener('click', function () {
-    openBackdropWindow.classList.remove('.is-open')
+    openModalWindow.classList.remove('.is-open')
 });
 
 
