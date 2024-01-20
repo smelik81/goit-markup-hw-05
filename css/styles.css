@@ -721,7 +721,7 @@ body {
     line-height: 1.33;
     letter-spacing: 0.04em;
 }
-.checkbox-description span {
+.checkbox-description .checkbox-label-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
