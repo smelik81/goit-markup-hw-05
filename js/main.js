@@ -1,21 +1,20 @@
-const openModalWindow = document.querySelector('.main-btn');
-const showModalWindow = document.querySelector('.backdrop');
-const closeBackdropWindow = document.querySelector('.modal-btn-close');
 
+document.addEventListener("DOMContentLoaded", function () {
+  const openModalBtn = document.getElementById("openModalBtn");
+  const modalBackdrop = document.getElementById("modalBackdrop");
+  const closeModalBtn = document.getElementById("closeModalBtn");
 
+  openModalBtn.addEventListener("click", function () {
+    modalBackdrop.classList.add("is-open");
+  });
 
-openModalWindow.addEventListener('click', function () {
-    if (!showModalWindow.classList.contains('.is-open')) {
-        showModalWindow.classList.add('.is-open')
-    } else {
-        showModalWindow.classList.remove('.is-open')
-    }
-});
-
-closeBackdropWindow.addEventListener('click', function () {
-    openModalWindow.classList.remove('.is-open')
+  closeModalBtn.addEventListener("click", function () {
+    modalBackdrop.classList.remove("is-open");
+  });
 });
 
 
-
-
+/*or (const item of showModalWindow) {
+    item.querySelector(".modal-btn-close").onclick = () => item.remove();
+  }
+*/

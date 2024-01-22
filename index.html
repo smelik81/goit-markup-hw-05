@@ -54,7 +54,7 @@
       <section class="main-info">
         <div class="container img-fluid">
           <h1 class="main-info-title">Effective Solutions for Your Business</h1>
-          <button class="main-btn" type="button">Order Service</button>
+          <button id="openModalBtn" class="main-btn" type="button">Order Service</button>
         </div>
       </section>
       <section class="about">
@@ -585,9 +585,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" id="modalBackdrop">
       <div class="modal">
-        <button class="modal-btn-close" type="button">
+        <button id="closeModalBtn" class="modal-btn-close" type="button">
             <svg class="modal-svg" width="8" height="8">
               <use href="./images/icons-2.svg#icon-close-btn-modal"></use>
             </svg>
@@ -649,7 +649,7 @@
           </div>
           <div class="checkbox-block">
             <input
-              class="checkbox-input visually-hidden"
+              class="checkbox-input"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
